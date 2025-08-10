@@ -1,0 +1,5 @@
+# Status as of 09-Aug-2025
+streamlit==1.41.1
+pillow==11.0.0
+torch==2.7.0+cu118
+torchvision==0.22.0+cu118
