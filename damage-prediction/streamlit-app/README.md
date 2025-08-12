@@ -27,5 +27,11 @@ This app allows you drag and drop an image of a car and it will tell you what ki
       ``` commandline
       run streamlit run main.py"
       ```
+### Front End Screen 
+![UI_Screen.png](UI_Screen.png)
+
+### Prediction 
+![Uploaded_image.png](Uploaded_image.png)
+
 ### Architecture 
 ![CNN_Architecture_for_classification.png](CNN_Architecture_for_classification.png)
