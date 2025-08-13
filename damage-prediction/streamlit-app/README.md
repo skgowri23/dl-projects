@@ -1,7 +1,7 @@
 ### Vehicle Detection App
 This app allows you drag and drop an image of a car and it will tell you what kind of damage it has. The model is trained on third quarter front and rear views hence the picture should capture the third quarter front or rear view of a car.
 
-![Third_qtr_of_a_car.jpg](Third_qtr_of_a_car.jpg)
+![UI_Screen.png](UI_Screen.png)
 
 ### Model Details
 1. Used RestNet50 for transfer Learning
@@ -27,11 +27,11 @@ This app allows you drag and drop an image of a car and it will tell you what ki
       ``` commandline
       run streamlit run main.py"
       ```
-### Front End Screen 
-![UI_Screen.png](UI_Screen.png)
-
-### Prediction 
+### Damage Prediction 
 ![Uploaded_image.png](Uploaded_image.png)
 
-### Architecture 
-![CNN_Architecture_for_classification.png](CNN_Architecture_for_classification.png)
+### Model Creation & Evaluation steps
+![data_flow_and_model_evaluation_1.png](data_flow_and_model_evaluation_1.png)
+
+### Core Model ( Architecture ) 
+![cnn_resnet50_architecture_v1.png](cnn_resnet50_architecture_v1.png)
