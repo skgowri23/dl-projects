@@ -41,6 +41,7 @@ This app allows you drag and drop an image of a car and it will tell you what ki
 #### Scenario-1 
 ![Scenario_1_flat_front.png](Scenario_1_flat_front.png)
 Though, we provided flat front, it predicted well.
+
 Takeaway:- 
 1.  May be "features" involved in identifying "Front Normal" works well. Still, we have to try with similar images and make sure, it works fine or not :-)
 
