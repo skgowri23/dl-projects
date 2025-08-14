@@ -36,3 +36,20 @@ This app allows you drag and drop an image of a car and it will tell you what ki
 
 ### Core Model ( Architecture ) 
 ![cnn_resnet50_architecture_v1.png](cnn_resnet50_architecture_v1.png)
+
+### Some interesting predictions
+#### Scenario-1 
+![Scenario_1_flat_front.png](Scenario_1_flat_front.png)
+Though, we provided flat front, it predicted well.
+Takeaway:- 
+1.  May be "features" involved in identifying "Front Normal" works well. Still, we have to try with similar images and make sure, it works fine or not :-)
+
+
+#### Scenario-2
+![Scenario_2_RB_Mother_and_Kid.png](Scenario_2_RB_Mother_and_Kid.png)
+This image is perfect "Rear Normal", but it was predicted as "Rear Breakage"
+    
+Takeway:- 
+1.  As a humans, we know Mother and Kid sitting at Rear side of the car. But Model considers "that portion of the pixel" as "Breakage"
+2. Good thing is, it predicted well, the first part as "Rear"
+3. Generally, if someone want to assess the damage, "Only car should be there. No passengers or No other objects". 
