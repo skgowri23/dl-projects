@@ -1,18 +1,19 @@
 ### Vehicle Detection App
 This app allows you drag and drop an image of a car and it will tell you what kind of damage it has. The model is trained on third quarter front and rear views hence the picture should capture the third quarter front or rear view of a car.
 
-![Third_qtr_of_a_car.jpg](Third_qtr_of_a_car.jpg)
+![UI_Screen.png](UI_Screen.png)
 
 ### Model Details
-1. Used RestNet50 for transfer Learning
-2. Model was trained on 1725 images with 6 target classes 
+1. Used CNN (Convolutional Neural Network). This is good at processing images. 
+2. Used RestNet50 for transfer Learning
+3. Model was trained on 1725 images with 6 target classes 
    1. Front Normal![FN_3.jpg](FN_3.jpg)
    2. Front Crushed![FC_43.jpg](FC_43.jpg)
    3. Front Breakage![FB_15.jpg](FB_15.jpg)
    4. Rear Normal![RN_10.jpg](RN_10.jpg)
    5. Rear Crushed![RC_15.jpg](RC_15.jpg)
    6. Rear Breakage![RB_2.jpg](RB_2.jpg)
-3. The Accuracy on Validation-Set was around 81.57%
+4. The Accuracy on Validation-set (Test-dataset) was around 81.57%
 
 ### Setup 
 1.  To get started, first install the dependencies using
@@ -27,5 +28,29 @@ This app allows you drag and drop an image of a car and it will tell you what ki
       ``` commandline
       run streamlit run main.py"
       ```
-### Architecture 
-![CNN_Architecture_for_classification.png](CNN_Architecture_for_classification.png)
+### Damage Prediction 
+![Uploaded_image.png](Uploaded_image.png)
+
+### Model Creation & Evaluation steps
+![data_flow_and_model_evaluation_1.png](data_flow_and_model_evaluation_1.png)
+
+### Core Model ( Architecture ) 
+![cnn_resnet50_architecture_v1.png](cnn_resnet50_architecture_v1.png)
+
+### Some interesting predictions
+#### Scenario-1 
+![Scenario_1_flat_front.png](Scenario_1_flat_front.png)
+Though, we provided flat front, it predicted well.
+
+Takeaway:- 
+1.  May be "features" involved in identifying "Front Normal" works well. Still, we have to try with similar images and make sure, it works fine or not :-)
+
+
+#### Scenario-2
+![Scenario_2_RB_Mother_and_Kid.png](Scenario_2_RB_Mother_and_Kid.png)
+This image is perfect "Rear Normal", but it was predicted as "Rear Breakage"
+    
+Takeway:- 
+1.  As a humans, we know Mother and Kid sitting at Rear side of the car. But Model considers "that portion of the pixel" as "Breakage"
+2. Good thing is, it predicted well, the first part as "Rear"
+3. Generally, if someone want to assess the damage, "Only car should be there. No passengers or No other objects". 
