@@ -1,4 +1,4 @@
-### Vehicle Detection App
+### Vehicle Damage Detection App
 This app allows you drag and drop an image of a car and it will tell you what kind of damage it has. The model is trained on 3/4 th "front & rear views" of a car. So, the picture should capture in the same view. 
 
 ![UI_Screen.png](UI_Screen.png)
