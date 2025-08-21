@@ -37,6 +37,9 @@ This app allows you drag and drop an image of a car and it will tell you what ki
 ### Core Model ( Architecture ) 
 ![cnn_resnet50_architecture_v1.png](cnn_resnet50_architecture_v1.png)
 
+### Steps involved in Core Model 
+![core_model_steps.png](core_model_steps.png)
+
 ### Some interesting predictions
 #### Scenario-1 
 ![Scenario_1_flat_front.png](Scenario_1_flat_front.png)
