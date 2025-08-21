@@ -7,13 +7,17 @@ This app allows you drag and drop an image of a car and it will tell you what ki
 1. Used CNN (Convolutional Neural Network). This is good at processing images. 
 2. Used RestNet50 for transfer Learning
 3. Model was trained on 1725 images with 6 target classes 
-   1. Front Normal![FN_3.jpg](FN_3.jpg)
-   2. Front Crushed![FC_43.jpg](FC_43.jpg)
-   3. Front Breakage![FB_15.jpg](FB_15.jpg)
-   4. Rear Normal![RN_10.jpg](RN_10.jpg)
-   5. Rear Crushed![RC_15.jpg](RC_15.jpg)
-   6. Rear Breakage![RB_2.jpg](RB_2.jpg)
-4. The Accuracy on Validation-set (Test-dataset) was around 81.57%
+#### Six Target classes along with sample image
+| 1.Front Normal                    | 2.Front Crushed                    | 3.Front Breakage                   |
+|-----------------------------------|------------------------------------|------------------------------------|
+| <img src="FN_3.jpg" width="200"/> | <img src="FC_43.jpg" width="200"/> | <img src="FB_15.jpg" width="200"/> |
+-
+| 4.Rear Normal                      | 5.Rear Crushed                     | 6.Rear Breakage                   |
+|------------------------------------|------------------------------------|-----------------------------------|
+| <img src="RN_10.jpg" width="200"/> | <img src="RC_15.jpg" width="200"/> | <img src="RB_2.jpg" width="200"/> |
+
+The Accuracy on Validation-set (Test-dataset) was around 81.57%
+
 
 ### Setup 
 1.  To get started, first install the dependencies using
