@@ -11,7 +11,9 @@ This app allows you drag and drop an image of a car and it will tell you what ki
 | 1.Front Normal                    | 2.Front Crushed                    | 3.Front Breakage                   |
 |-----------------------------------|------------------------------------|------------------------------------|
 | <img src="FN_3.jpg" width="200"/> | <img src="FC_43.jpg" width="200"/> | <img src="FB_15.jpg" width="200"/> |
+
 <br>
+
 | 4.Rear Normal                      | 5.Rear Crushed                     | 6.Rear Breakage                   |
 |------------------------------------|------------------------------------|-----------------------------------|
 | <img src="RN_10.jpg" width="200"/> | <img src="RC_15.jpg" width="200"/> | <img src="RB_2.jpg" width="200"/> |
